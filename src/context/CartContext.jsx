@@ -35,7 +35,7 @@ export default function CartProvider({ children }){
         setCartItems(cartItems.filter((item) => item.id !== productId));
     }
 
-    function updateQuantity(productId, quantity){``
+    function updateQuantity(productId, quantity){
         if(quantity <= 0){
             removeFromCart(productId);
             return;
