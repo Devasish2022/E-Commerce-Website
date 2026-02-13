@@ -16,7 +16,10 @@ export default function ProductCard({product}) {
                     {product.price}
                 </p>
                 <div className="product-card-actions">
-                    <Link className="btn btn-secondary">
+                    <Link 
+                        className="btn btn-secondary"
+                        to={`/products/${product.id}`}
+                    >
                         View Details
                     </Link>
                     <button className="btn btn-primary">
